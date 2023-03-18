@@ -1,19 +1,11 @@
 # DALL.E-API - OpenAI image generation 🌁
 
 ### Getting Started:
+
 * Open the Terminal.
-* Create package.json file `npm init -y`
+* `git clone https://github.com/Yowezy/DALL.E-API.git`
 * Install packages `npm i express openai dotenv`
 * Install  dev dependencie `npm i -D nodemon`
-* Make this changes on package.json file
-```bash 
-
-"scripts": {
-    "start": "node index",
-    "dev": "nodemon index"
-  },
-```
-
 * Create `.env` File
 
 ```bash 
