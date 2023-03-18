@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/spinner.css" />
+
+      <script src="js/main.js" defer></script>
+      <title>DALL·E</title>
+    </head>
+    <body>
+      <header>
+        <div class="navbar">
+          <div class="navbar-left">
+            <div>
+              <img src="img/openai-logo.pdf" width="20px" height="20px" />
+            </div>
+            <div class="logo">
+              <h3>DALL·E</h3>
+            </div>
+          </div>
+          <div class="navbar-right">
+            <div class="nav-links">
+              <ul>
+                <li>
+                  <a href="https://github.com/Yowezy/DALL.E-API"
+                    ><img src="img/github-mark.png" width="24px" height="24px"
+                  /></a>
+                </li>
+                <li>
+                  <h3>YS</h3>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="showcase">
+          <form id="image-form">
+            <h2>• Imagine & Describe 🌁</h2>
+            <div class="form-control">
+              <input
+                type="text"
+                id="prompt"
+                placeholder="Enter Image Description..."
+              />
+            </div>
+            <!-- size -->
+            <div class="form-control">
+              <select name="size" id="size">
+                <option value="small">Small</option>
+                <option value="medium" selected>Medium</option>
+                <option value="large">Large</option>
+              </select>
+            </div>
+            <button type="submit" class="btn">Generate</button>
+          </form>
+        </section>
+
+        <section class="image">
+          <div class="image-container">
+            <h2 class="msg"></h2>
+            <img src="" alt="" id="image" />
+          </div>
+        </section>
+      </main>
+
+      <div class="spinner"></div>
+    </body>
+  </html>
+</html>
